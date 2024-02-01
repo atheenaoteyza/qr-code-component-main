@@ -1,0 +1,74 @@
+:root {
+    
+    --White: hsl(0, 0%, 100%);
+    --background: hsl(212, 45%, 89%);
+    --light-text: hsl(220, 15%, 55%);
+    --dark-text: hsl(218, 44%, 22%);
+}
+/* border box model: https://css-tricks.com/box-sizing/ */
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    padding: 0;
+    margin: auto;
+    background-color: var(--background);
+    font-family: "Outfit", sans;
+    font-size: 15px;
+    height: 700px;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+.card{
+    background-color: var(--White);
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.1);
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+}
+
+img{
+    
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+
+h2.text-1 {
+    width: 16rem;
+    margin:0;
+    padding: 0;
+    color: var(--dark-text);
+}
+
+p{
+    font-size: 15px;
+    color: var(--light-text);
+    width: 18rem;
+    margin: 0;
+    margin-bottom: 1rem;
+    padding: 1rem;
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
